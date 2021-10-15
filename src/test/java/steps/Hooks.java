@@ -13,7 +13,7 @@ public class Hooks {
 
     @Before
     public void beforeScenario(){
-        System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         driver = new ChromeDriver(options);
